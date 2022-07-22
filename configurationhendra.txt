@@ -1,0 +1,34 @@
+list Perintah terminal
+=============================
+
+kamus :
+npx -> Execute file
+init -> Create file configuration nodejs
+init -y -> Create file configuration nodejs default
+--watch -> Notify setiap perubahan file kepada aplikasi kita
+
+npm init -y  // mengcreate package.json isinya otomatis default
+npm init    // mengcreate package.json yang isinya diisi step by step
+
+npm tailwindcss init // mengcreate file tailwind configuration di project kita
+
+npx tailwindcss -i .src\input.css -o .dist\output.css --watch   
+npx tailwindcss -i .\src\css\input.css -o .\public\css\styletailwind.css --watch  
+//artinya execute / mengcompile  app tailwindcss yang ada di file input.css 
+kemudian, hasil compile akan disimpan di folder dist/output.css (jika file output.css belum ada, 
+maka akan di create otomatis)
+
+//membuat ukuran file css tailwind menjadi lebih kecil/ringkas
+npx tailwindcss -o ./public/css/final.css --minify
+
+Arti CSS Tailwinnd
+===================
+ -leading relaxed : merenggangkan tulisan agak tidak terlalu mepet
+ - block: agar tulisannya enter ke bawah
+ -text-base: ukuran font normal
+ -hover-shadow-lg: ketika kursor diarahkan ke text, maka tulisannya akan ada shadownya
+ -w-full: lebar dari contentnya full
+ -self-end: ingin menyimpan content di sebelah kanan
+ -mx-auto: margin sumbu x rata tengah
+ - -z-10: membuat suatu object menjadi dibelakang object utama
+ - lg:w-1/2:membuat web responsive, ketika layar large, mmaka content nya terbagi menjadi sama2 1/2
